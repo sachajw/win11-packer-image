@@ -28,6 +28,7 @@
 - VirtualBox VM boot configuration [here](https://developer.hashicorp.com/packer/integrations/hashicorp/virtualbox/latest/components/builder/vm#boot-configuration)
 - Oscdimg.exe must be added to your windows path here `%USERPROFILE%\AppData\Local\Microsoft\WindowsApps`
 - Oscdimg.exe is needed for the creation of an ISO for the `Autounattend.xml and PowerShell scripts` to be loaded for Windows automation
+- Add the `Windows ISO` in the `iso` folder
 ```
 virtualbox-iso.virtualbox: Creating CD disk...
     virtualbox-iso.virtualbox: OSCDIMG 2.54 CD-ROM and DVD-ROM Premastering Utility
