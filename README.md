@@ -88,5 +88,23 @@ packer fmt win11.pkr.hcl
 packer build -force win11.pkr.hcl
 ```
 
+## Setup
+
 #### Autounattend.xml
-- Windows auto configuration file
+- Windows auto configuration answer file
+
+#### choco-pkgs.ps1
+- Installs Chocolatey Windows Packer Manager
+- Installs Git
+- Installs PowerShell 7
+- Installs 7zip
+- Installs Visual Studio Code
+
+#### disable-screensaver.ps1
+- Disables the screensaver
+
+#### fixnetwork.ps1
+- Set the network location to private
+
+#### microsoft-update.ps1
+- Configures Microsoft Updates
