@@ -3,4 +3,4 @@ choco install git -y
 choco install pwsh -y
 choco install 7zip -y
 choco install vscode -y
-Restart-Computer -Force
+refreshenv / Update-SessionEnvironment
