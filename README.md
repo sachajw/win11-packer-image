@@ -98,7 +98,7 @@ vagrant up
 - Windows auto configuration answer file
 
 #### choco-pkgs.ps1
-- Installs Chocolatey Windows Packer Manager
+- Installs Chocolatey Windows Package Manager
 - Installs Git
 - Installs PowerShell 7
 - Installs 7zip
