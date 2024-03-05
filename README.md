@@ -21,6 +21,7 @@ System type	64-bit operating system, x64-based processor
 - Install the Vagrant extension for VS Code [here](https://marketplace.visualstudio.com/items?itemName=marcostazi.VS-code-vagrantfile)
 - Install Virtualbox [here](https://www.virtualbox.org/wiki/Downloads)
 - Download Git [here](https://git-scm.com/downloads)
+- Download Windows 11 ISO [here](https://www.microsoft.com/software-download/windows11)
 - Windows 11 specs, features and computer requirements [here](https://www.microsoft.com/en-us/windows/windows-11-specifications)
 - Install Oscdimg.exe image creation tool [here](http://www.sevenforums.com/attachments/general-discussion/32382d1256189124-make-bootable-iso-student-d-l-oscdimg.zip)
 - Oscdimg.exe image creation tool docs [here](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-vista/cc749036(v=ws.10)?redirectedfrom=MSDN)
