@@ -58,11 +58,6 @@ source "virtualbox-iso" "win11" {
 build {
   sources = ["source.virtualbox-iso.win11"]
 
-  provisioner "windows-restart" {
-    restart_check_command = "powershell -command \"& {Write-Output 'restarted.'}\""
-    restart_timeout       = "3m"
-  }
-
   provisioner "powershell" {
     elevated_user     = var.winrm_username
     elevated_password = var.winrm_password
@@ -84,23 +79,13 @@ build {
       "exclude:$_.InstallationBehavior.CanRequestUserInput",
       "include:$true"
     ]
-    restart_timeout = "3m"
-  }
-
-  provisioner "windows-restart" {
-    restart_check_command = "powershell -command \"& {Write-Output 'restarted.'}\""
-    restart_timeout       = "3m"
+    restart_timeout = "120m"
   }
 
   provisioner "powershell" {
     elevated_user     = var.winrm_username
     elevated_password = var.winrm_password
     scripts           = ["./setup/choco-pkgs.ps1"]
-  }
-
-  provisioner "windows-restart" {
-    restart_check_command = "powershell -command \"& {Write-Output 'restarted.'}\""
-    restart_timeout       = "3m"
   }
 
   provisioner "powershell" {
