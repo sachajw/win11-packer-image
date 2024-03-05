@@ -2,6 +2,7 @@ $ErrorActionPreference = "SilentlyContinue"
 
 # Switch network connection to private mode
 # Required for WinRM firewall rules
+Set-ExecutionPolicy Bypass -Force
 $profile = Get-NetConnectionProfile
 Set-NetConnectionProfile -Name $profile.Name -NetworkCategory Private
 # Disable Network discovery
