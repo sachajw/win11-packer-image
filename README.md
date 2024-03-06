@@ -2,10 +2,10 @@
 - Build time 'virtualbox-iso.win11' finished after 1 hour
 - Processor 12th Gen Intel(R) Core(TM) i5-12400F 2.50 GHz
 - Installed RAM	32,0 GB (31,9 GB usable)
-- System type	64-bit operating system, x64-based processor
+- System type 64-bit operating system, x64-based processor
 - SSD Transcend SATA 3 6Gb/s SSD370s specs [here](https://www.transcend-info.com/Products/No-631)
 
-## [Hashicorp Packer](https://developer.hashicorp.com/packer)
+#### [Hashicorp Packer](https://developer.hashicorp.com/packer)
 - Packer is a tool that lets you create identical machine images for multiple platforms from a single source template
 - Packer can create golden images to use in image pipelines
 
@@ -16,7 +16,7 @@
 - `Integration with Infrastructure as Code (IaC):` Packer integrates well with IaC tools like Terraform, enabling automated deployment and management of the infrastructure that runs the Packer-built images.
 - `Efficiency in Development and Testing:` By creating standardized machine images, developers and QA teams can work in environments that closely mimic production, reducing the "works on my machine" problem.
 
-## [Hashicorp Vagrant](https://developer.hashicorp.com/vagrant)
+#### [Hashicorp Vagrant](https://developer.hashicorp.com/vagrant)
 - Vagrant is the command line utility for managing the lifecycle of virtual machines
 - Isolate dependencies and their configuration within a single disposable and consistent environment
 
@@ -66,15 +66,10 @@ virtualbox-iso.virtualbox: Creating CD disk...
     virtualbox-iso.virtualbox: After optimization, image file is 83968 bytes
     virtualbox-iso.virtualbox: Done.
 ```
-<<<<<<< HEAD
 
 #### Commands & Instructions
 - Run these commands sequentially in the root of the repo
 - Initialise a Packer project
-=======
-#### Commands
-- Packer initialise the project
->>>>>>> bf6b53e5559c02dafb96e11b539d0e40933e8f5b
 ```
 packer init win11.pkr.hcl
 ```
