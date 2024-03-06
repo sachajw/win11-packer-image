@@ -67,7 +67,9 @@ virtualbox-iso.virtualbox: Creating CD disk...
     virtualbox-iso.virtualbox: After optimization, image file is 83968 bytes
     virtualbox-iso.virtualbox: Done.
 ```
-#### Commands
+
+#### Commands & Instructions
+- Run these commands sequentially in the root of the repo
 - Initialise a Packer project
 ```
 packer init win11.pkr.hcl
