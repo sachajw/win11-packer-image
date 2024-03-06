@@ -69,7 +69,7 @@ virtualbox-iso.virtualbox: Creating CD disk...
     virtualbox-iso.virtualbox: Done.
 ```
 #### Commands
-- Initialise a Packer project
+- Packer initialise the project
 ```
 packer init win11.pkr.hcl
 ```
@@ -104,7 +104,7 @@ end
 
 #### Setup
 
-#### Autounattend.xml
+#### autounattend.xml
 - Windows auto configuration answer file
 
 #### choco-pkgs.ps1
