@@ -93,6 +93,15 @@ packer build -force win11.pkr.hcl
 vagrant up
 ```
 
+- Vagrant file
+
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "sachajw/win11"
+  config.vm.box_version = "1.0.0"
+end
+```
+
 #### Setup
 
 #### Autounattend.xml
