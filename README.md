@@ -1,9 +1,19 @@
 # Packer, Vagrant and VirtualBox Windows 11 Image Generation and Deployment
+<<<<<<< HEAD
 - Build time 'virtualbox-iso.win11' finished after 1 hour
 - Processor 12th Gen Intel(R) Core(TM) i5-12400F 2.50 GHz
 - Installed RAM	32,0 GB (31,9 GB usable)
 - System type	64-bit operating system, x64-based processor
 - SSD Transcend SATA 3 6Gb/s SSD370s specs [here](https://www.transcend-info.com/Products/No-631)
+=======
+
+- Build time i5 'virtualbox-iso.win11' finished after 1 hour 20 minutes.
+```
+Processor	12th Gen Intel(R) Core(TM) i5-12400F   2.50 GHz
+Installed RAM	32,0 GB (31,9 GB usable)
+System type	64-bit operating system, x64-based processor
+```
+>>>>>>> bf6b53e5559c02dafb96e11b539d0e40933e8f5b
 
 ## [Hashicorp Packer](https://developer.hashicorp.com/packer)
 - Packer is a tool that lets you create identical machine images for multiple platforms from a single source template
@@ -66,10 +76,15 @@ virtualbox-iso.virtualbox: Creating CD disk...
     virtualbox-iso.virtualbox: After optimization, image file is 83968 bytes
     virtualbox-iso.virtualbox: Done.
 ```
+<<<<<<< HEAD
 
 #### Commands & Instructions
 - Run these commands sequentially in the root of the repo
 - Initialise a Packer project
+=======
+#### Commands
+- Packer initialise the project
+>>>>>>> bf6b53e5559c02dafb96e11b539d0e40933e8f5b
 ```
 packer init win11.pkr.hcl
 ```
@@ -88,14 +103,24 @@ packer build -force win11.pkr.hcl
 
 #### Vagrant Notes
 - Vagrant Box [here](https://app.vagrantup.com/sachajw/boxes/win11)
+- Vagrant up in the root of the repo will deploy the virtual machine
 
 ```
 vagrant up
 ```
 
-## Setup
+- Vagrant file
 
-#### Autounattend.xml
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "sachajw/win11"
+  config.vm.box_version = "1.0.0"
+end
+```
+
+#### Setup
+
+#### autounattend.xml
 - Windows auto configuration answer file
 
 #### choco-pkgs.ps1
