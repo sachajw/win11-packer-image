@@ -88,6 +88,7 @@ packer build -force win11.pkr.hcl
 
 #### Vagrant Notes
 - Vagrant Box [here](https://app.vagrantup.com/sachajw/boxes/win11)
+- Vagrant up in the root of the repo will deploy the virtual machine
 
 ```
 vagrant up
