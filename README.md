@@ -1,10 +1,9 @@
 # Packer, Vagrant and VirtualBox Windows 11 Image Generation and Deployment
-- Build time i5 'virtualbox-iso.win11' finished after 1 hour 20 minutes.
-```
-Processor	12th Gen Intel(R) Core(TM) i5-12400F   2.50 GHz
-Installed RAM	32,0 GB (31,9 GB usable)
-System type	64-bit operating system, x64-based processor
-```
+- Build time 'virtualbox-iso.win11' finished after 1 hour
+- Processor 12th Gen Intel(R) Core(TM) i5-12400F 2.50 GHz
+- Installed RAM	32,0 GB (31,9 GB usable)
+- System type	64-bit operating system, x64-based processor
+- SSD Transcend SATA 3 6Gb/s SSD370s specs [here](https://www.transcend-info.com/Products/No-631)
 
 ## [Hashicorp Packer](https://developer.hashicorp.com/packer)
 - Packer is a tool that lets you create identical machine images for multiple platforms from a single source template
